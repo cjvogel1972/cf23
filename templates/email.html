@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Quickstart</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='confused.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <img src="https://www.edwardjones.com/sites/default/files/2021-01/logo-gray.svg">
+  </header>
+  <h3>SRE Buddy Daily Insights</h3>
+  <i></i>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="email">
+        <!--<p>Hello Team,</p>
+        <p>I am reaching out to provide you with an update on the ASE application. Our monitoring has shown that the median and percentile response times have been increasing, with the exception of the Print-pdfs.action which has seen a significant decrease in the last 7 days.</p>
+        <p>In terms of failure rates, all metrics are currently at 0%, with the exception of the Input.action and Investment-selection.action which have recorded 0.055% and 0.067% respectively in the last 24 hours, and 0.039% and 0.067% respectively in the last 7 days.</p>
+        <p>As you can see, the increases in response time and failure rates are a cause for concern and we should take a closer look at these issues. We should also take a look at the Print-pdfs.action, which has seen a decrease in response time.</p>
+        <p>For further information and questions, please visit the SRE Buddy application.</p>-->
+        <video width="368" height="464" controls autoplay>
+          <source src="{{ url_for('static', filename='haspiel-response1.mp4') }}" type="video/mp4">
+        </video>
+        <a class="btn btn-primary" role="button" href="/">Navigate to SRE Buddy</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    $("#ask").click(function() {
+      $("#email").html("");
+
+      $(document).ajaxStart(function() {
+          $(document.body).css({'cursor' : 'wait'});
+      }).ajaxStop(function() {
+          $(document.body).css({'cursor' : 'default'});
+      });
+
+      $.ajax({
+        type: "POST",
+        url: "/chat",
+        data: { "prompt": $("#prompt").val() },
+        success: function(data) {
+          $("#history").html("<p class='me'>" + data[0] + "</p><p class='bot'>" + data[1] + "</p><hr />" + $("#history").html());
+
+        }
+      });
+    });
+
+  </script>
+</body>

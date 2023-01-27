@@ -1,0 +1,154 @@
+[
+  {
+    "Service": "RetirementGoalRestController",
+    "Pod Name": "fpl-retiregoal-rest",
+    "Response Time": "177 ms",
+    "Failure Rate": "0.07%",
+    "CPU": "65 ms/req",
+    "Throughput": "706/min",
+    "Timeframe": "24H"
+  },
+  {
+    "Service": "SavingGoalsController",
+    "Pod Name": "fpl-saving-goals-rest",
+    "Response Time": "108 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "16.8 ms/req",
+    "Throughput": "32/min",
+    "Timeframe": "24H"
+  },
+  {
+    "Service": "K8s-fpl",
+    "Pod Name": "fpl-spending-rest",
+    "Response Time": "10 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "1.05 ms/req",
+    "Throughput": "5/min",
+    "Timeframe": "24H"
+  },
+  {
+    "Domain": "fastWeb-phx",
+    "Server": "localhost",
+    "Context Root": "/",
+    "Response Time": "238 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "100 ms/req",
+    "Throughput": "675/min",
+    "Timeframe": "24H"
+  },
+  {
+    "Domain": "fastWeb-phx",
+    "Server": "m72fastWeb",
+    "Context Root": "/fastArchival",
+    "Response Time": "0 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "0 ms/req",
+    "Throughput": "0/min",
+    "Timeframe": "24H"
+  },
+  {
+    "Domain": "fastWeb-phx",
+    "Server": "m72fastWeb",
+    "Context Root": "/FPLfinancialfoundation-web",
+    "Response Time": "1.33 s",
+    "Failure Rate": "0.0%",
+    "CPU": "197 ms/req",
+    "Throughput": "75.5/min",
+    "Timeframe": "24H"
+  },
+  {
+    "Domain": "fastWeb-phx",
+    "Server": "m72fastWeb",
+    "Context Root": "/FPLretirement-web",
+    "Response Time": "2.25 s",
+    "Failure Rate": "0.88%",
+    "CPU": "177 ms/req",
+    "Throughput": "56.5/min",
+    "Timeframe": "24H"
+  },
+  {
+    "Service": "K8s-fpl",
+    "Pod Name": "fpl-survivor-needs-rest",
+    "Response Time": "6.37 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "382 μs/req",
+    "Throughput": "14/min",
+    "Timeframe": "7D"
+  },
+  {
+    "Service": "RetirementGoalRestController",
+    "Pod Name": "fpl-retiregoal-rest",
+    "Response Time": "173 ms",
+    "Failure Rate": "0.46%",
+    "CPU": "63.4 ms/req",
+    "Throughput": "657/min",
+    "Timeframe": "7D"
+  },
+  {
+    "Service": "SavingGoalsController",
+    "Pod Name": "fpl-saving-goals-rest",
+    "Response Time": "103 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "15.8 ms/req",
+    "Throughput": "41.5/min",
+    "Timeframe": "7D"
+  },
+  {
+    "Service": "K8s-fpl",
+    "Pod Name": "fpl-spending-rest",
+    "Response Time": "9.22 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "1.05 ms/req",
+    "Throughput": "8/min",
+    "Timeframe": "7D"
+  },
+  {
+    "Service": "K8s-fpl",
+    "Pod Name": "fpl-survivor-needs-rest",
+    "Response Time": "8.02 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "575 μs/req",
+    "Throughput": "12.5/min",
+    "Timeframe": "7D"
+  },
+  {
+    "Domain": "fastWeb-phx",
+    "Server": "localhost",
+    "Context Root": "/",
+    "Response Time": "315 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "101 ms/req",
+    "Throughput": "441/min",
+    "Timeframe": "7D"
+  },
+  {
+    "Domain": "fastWeb-phx",
+    "Server": "m72fastWeb",
+    "Context Root": "/fastArchival",
+    "Response Time": "0 ms",
+    "Failure Rate": "0.0%",
+    "CPU": "0 ms/req",
+    "Throughput": "0/min",
+    "Timeframe": "7D"
+  },
+  {
+    "Domain": "fastWeb-phx",
+    "Server": "m72fastWeb",
+    "Context Root": "/FPLfinancialfoundation-web",
+    "Response Time": "1.45 s",
+    "Failure Rate": "0.0%",
+    "CPU": "190 ms/req",
+    "Throughput": "62.5/min",
+    "Timeframe": "7D"
+  },
+  {
+    "Domain": "fastWeb-phx",
+    "Server": "m72fastWeb",
+    "Context Root": "/FPLretirement-web",
+    "Response Time": "2.92 s",
+    "Failure Rate": "1.61%",
+    "CPU": "199 ms/req",
+    "Throughput": "32/min",
+    "Timeframe": "7D"
+  }
+]
